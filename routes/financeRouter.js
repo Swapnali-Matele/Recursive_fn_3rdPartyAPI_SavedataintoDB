@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const {getPost} = require('../controller/fetchData2')
 
 
 
+router.post('/finance', getPost)
 
-router.post('/api/finance')
-
-module.exports = router;
+module.exports = router

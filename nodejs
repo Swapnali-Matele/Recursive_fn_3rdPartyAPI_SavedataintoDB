@@ -1,0 +1,628 @@
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+hufheuhuefhiuehhfufuiehufheifh
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+hufheuhuefhiuehhfufuiehufheifh
+AxiosError: getaddrinfo EAI_AGAIN yh-finance.p.rapidapi.com
+    at Function.AxiosError.from (/home/user/3rdPartyAPIWithRecursive/node_modules/axios/dist/node/axios.cjs:785:14)
+    at RedirectableRequest.handleRequestError (/home/user/3rdPartyAPIWithRecursive/node_modules/axios/dist/node/axios.cjs:2733:25)
+    at RedirectableRequest.emit (events.js:314:20)
+    at ClientRequest.eventHandlers.<computed> (/home/user/3rdPartyAPIWithRecursive/node_modules/follow-redirects/index.js:14:24)
+    at ClientRequest.emit (events.js:314:20)
+    at TLSSocket.socketErrorListener (_http_client.js:427:9)
+    at TLSSocket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  hostname: 'yh-finance.p.rapidapi.com',
+  syscall: 'getaddrinfo',
+  code: 'EAI_AGAIN',
+  errno: 'EAI_AGAIN',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'X-RapidAPI-Key': 'd1de5b782fmsh42fc9a3363de012p169536jsn3cb41ce5d8c4',
+      'X-RapidAPI-Host': 'yh-finance.p.rapidapi.com',
+      'User-Agent': 'axios/1.2.1',
+      'Content-Length': '128',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'https://yh-finance.p.rapidapi.com/screeners/list',
+    params: {
+      quoteType: 'MUTUALFUND',
+      sortField: 'fundnetassets',
+      region: 'US',
+      size: '50',
+      offset: '50',
+      sortType: 'DESC'
+    },
+    data: '[{"operator":"or","operands":[{"operator":"EQ","operands":["exchange","NAS"]},{"operator":"EQ","operands":["exchange","NYQ"]}]}]'
+  },
+  request: Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      bufferedRequest: null,
+      lastBufferedRequest: null,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: false,
+      bufferedRequestCount: 0,
+      corkedRequestsFree: [Object]
+    },
+    writable: true,
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=50&offset=50&sortType=DESC',
+      method: 'POST',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'yh-finance.p.rapidapi.com',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/screeners/list',
+      search: '?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=50&offset=50&sortType=DESC'
+    },
+    _ended: false,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 128,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'POST /screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=50&offset=50&sortType=DESC HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-RapidAPI-Key: d1de5b782fmsh42fc9a3363de012p169536jsn3cb41ce5d8c4\r\n' +
+        'X-RapidAPI-Host: yh-finance.p.rapidapi.com\r\n' +
+        'User-Agent: axios/1.2.1\r\n' +
+        'Content-Length: 128\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: yh-finance.p.rapidapi.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      insecureHTTPParser: undefined,
+      path: '/screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=50&offset=50&sortType=DESC',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'yh-finance.p.rapidapi.com',
+      protocol: 'https:',
+      _redirectable: [Circular],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://yh-finance.p.rapidapi.com/screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=50&offset=50&sortType=DESC',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo EAI_AGAIN yh-finance.p.rapidapi.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26) {
+    errno: 'EAI_AGAIN',
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'yh-finance.p.rapidapi.com'
+  }
+}
+Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.gq2rjja.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (internal/dns/promises.js:167:17) {
+  errno: 'ETIMEOUT',
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.gq2rjja.mongodb.net'
+}
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+sucessfully connected to database
+Server listening on port 3000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+sucessfully connected to database
+Server listening on port 3000
+AxiosError: Request failed with status code 503
+    at settle (/home/user/3rdPartyAPIWithRecursive/node_modules/axios/dist/node/axios.cjs:1855:12)
+    at IncomingMessage.handleStreamEnd (/home/user/3rdPartyAPIWithRecursive/node_modules/axios/dist/node/axios.cjs:2712:11)
+    at IncomingMessage.emit (events.js:326:22)
+    at endReadableNT (_stream_readable.js:1241:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ERR_BAD_RESPONSE',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      'X-RapidAPI-Key': 'd1de5b782fmsh42fc9a3363de012p169536jsn3cb41ce5d8c4',
+      'X-RapidAPI-Host': 'movies-app1.p.rapidapi.com',
+      'User-Agent': 'axios/1.2.1',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'get',
+    url: 'https://movies-app1.p.rapidapi.com/api/movies',
+    params: { page: '1', limit: '50', sort: 'createdAt' },
+    data: undefined
+  },
+  request: ClientRequest {
+    _events: [Object: null prototype] {
+      socket: [Function],
+      abort: [Function],
+      aborted: [Function],
+      connect: [Function],
+      error: [Function],
+      timeout: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'movies-app1.p.rapidapi.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'movies-app1.p.rapidapi.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(asyncId)]: 7,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    connection: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'movies-app1.p.rapidapi.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'movies-app1.p.rapidapi.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(asyncId)]: 7,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'GET /api/movies?page=1&limit=50&sort=createdAt HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'X-RapidAPI-Key: d1de5b782fmsh42fc9a3363de012p169536jsn3cb41ce5d8c4\r\n' +
+      'X-RapidAPI-Host: movies-app1.p.rapidapi.com\r\n' +
+      'User-Agent: axios/1.2.1\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: movies-app1.p.rapidapi.com\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: noopPendingOutput],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object],
+      requests: {},
+      sockets: [Object],
+      freeSockets: {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      scheduling: 'fifo',
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'GET',
+    insecureHTTPParser: undefined,
+    path: '/api/movies?page=1&limit=50&sort=createdAt',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      readable: false,
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      headers: [Object],
+      rawHeaders: [Array],
+      trailers: {},
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 503,
+      statusMessage: 'Service Temporarily Unavailable',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular],
+      responseUrl: 'https://movies-app1.p.rapidapi.com/api/movies?page=1&limit=50&sort=createdAt',
+      redirects: [],
+      [Symbol(kCapture)]: false
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'movies-app1.p.rapidapi.com',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      writable: true,
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function],
+      _currentRequest: [Circular],
+      _currentUrl: 'https://movies-app1.p.rapidapi.com/api/movies?page=1&limit=50&sort=createdAt',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'x-rapidapi-key': [Array],
+      'x-rapidapi-host': [Array],
+      'user-agent': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    }
+  },
+  response: {
+    status: 503,
+    statusText: 'Service Temporarily Unavailable',
+    headers: AxiosHeaders {
+      date: 'Tue, 13 Dec 2022 10:47:55 GMT',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '506',
+      connection: 'close',
+      'cache-control': 'no-cache, no-store',
+      'x-ratelimit-requests-limit': '1000',
+      'x-ratelimit-requests-remaining': '1000',
+      'x-ratelimit-requests-reset': '2678258',
+      server: 'RapidAPI-1.2.8',
+      'x-rapidapi-version': '1.2.8',
+      'x-rapidapi-region': 'AWS - ap-southeast-1'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [AxiosHeaders],
+      method: 'get',
+      url: 'https://movies-app1.p.rapidapi.com/api/movies',
+      params: [Object],
+      data: undefined
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'GET /api/movies?page=1&limit=50&sort=createdAt HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-RapidAPI-Key: d1de5b782fmsh42fc9a3363de012p169536jsn3cb41ce5d8c4\r\n' +
+        'X-RapidAPI-Host: movies-app1.p.rapidapi.com\r\n' +
+        'User-Agent: axios/1.2.1\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: movies-app1.p.rapidapi.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      insecureHTTPParser: undefined,
+      path: '/api/movies?page=1&limit=50&sort=createdAt',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'movies-app1.p.rapidapi.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    data: '<!DOCTYPE html>\n' +
+      '\t<html>\n' +
+      '\t  <head>\n' +
+      '\t\t<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+      '\t\t<meta charset="utf-8">\n' +
+      '\t\t<title>Application Error</title>\n' +
+      '\t\t<style media="screen">\n' +
+      '\t\t  html,body,iframe {\n' +
+      '\t\t\tmargin: 0;\n' +
+      '\t\t\tpadding: 0;\n' +
+      '\t\t  }\n' +
+      '\t\t  html,body {\n' +
+      '\t\t\theight: 100%;\n' +
+      '\t\t\toverflow: hidden;\n' +
+      '\t\t  }\n' +
+      '\t\t  iframe {\n' +
+      '\t\t\twidth: 100%;\n' +
+      '\t\t\theight: 100%;\n' +
+      '\t\t\tborder: 0;\n' +
+      '\t\t  }\n' +
+      '\t\t</style>\n' +
+      '\t  </head>\n' +
+      '\t  <body>\n' +
+      '\t\t<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>\n' +
+      '\t  </body>\n' +
+      '\t</html>'
+  }
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+sucessfully connected to database
+Server listening on port 3000
+{ finance: { result: [ [Object] ], error: null } }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+sucessfully connected to database
+Server listening on port 3000
+{ finance: { result: [ [Object] ], error: null } }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node app.js`[39m
+sucessfully connected to database
+Server listening on port 3000
+{ finance: { result: [ [Object] ], error: null } }
