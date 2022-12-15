@@ -19,7 +19,7 @@
 
 //   try {
 //     await fetch(
-//       `https://yh-finance.p.rapidapi.com/screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=${dataLimit}&offset=${dataOffset}&sortType=DESC`,
+      `https://yh-finance.p.rapidapi.com/screeners/list?quoteType=MUTUALFUND&sortField=fundnetassets&region=US&size=${dataLimit}&offset=${dataOffset}&sortType=DESC`,
 //       options
 //     )
 //       .the((apiData) => apiData.json())

@@ -4,6 +4,8 @@ const {getPost} = require('../controller/fetchData2')
 
 
 
-router.post('/finance', getPost)
 
-module.exports = router
+
+router.post('/finance', getPost);
+
+module.exports = router;

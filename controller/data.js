@@ -11,3 +11,4 @@ for (let i = 0; i < finalFinanceData.quotes.length; i++) {
 
     quotes.save();
     console.log(quotes);
+  }

@@ -25,5 +25,5 @@ const quoteSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.modelNames('Quotes', quoteSchema)
+module.exports = mongoose.model('Quotes', quoteSchema)
 //export default mongoose.model('Quotes', quoteSchema);
